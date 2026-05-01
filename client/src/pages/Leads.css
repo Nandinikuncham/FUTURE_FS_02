@@ -1,0 +1,219 @@
+.leads-top {
+  margin-bottom: 24px;
+}
+
+.leads-top h1 {
+  font-size: 32px;
+  color: #111827;
+}
+
+.subtext {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.filters {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.filters input,
+.filters select {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: white;
+  font-size: 15px;
+}
+
+.filters input {
+  flex: 1;
+}
+
+.filters select {
+  width: 190px;
+}
+
+.lead-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 22px;
+}
+
+.lead-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eef0f4;
+}
+
+.lead-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 16px;
+}
+
+.lead-header h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.lead-header p {
+  color: #4b5563;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.status {
+  height: fit-content;
+  white-space: nowrap;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.status-New {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-Contacted {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-Follow-up {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.status-Converted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-Lost {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.lead-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+  flex-wrap: wrap;
+}
+
+.lead-actions label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.lead-actions select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.notes-section {
+  margin-top: 12px;
+}
+
+.notes-section h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.note {
+  background: #f9fafb;
+  padding: 12px 14px;
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.note p {
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.note small {
+  color: #6b7280;
+}
+
+.no-notes {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.note-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.note-input input {
+  flex: 1;
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.note-input button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note-input button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .lead-list {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+
+  .note-input {
+    flex-direction: column;
+  }
+
+  .lead-header {
+    flex-direction: column;
+  }
+}
