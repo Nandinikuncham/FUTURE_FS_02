@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://future-fs-02-542u.onrender.com",
 });
 
 API.interceptors.request.use((req) => {
